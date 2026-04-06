@@ -135,7 +135,7 @@ module ClosureTree
     end
 
     def prepend_child(child_node)
-      child_node.order_value = -1
+      child_node.order_value = 0
       child_node.parent = self
       if child_node.save
         child_node.reload
